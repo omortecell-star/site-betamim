@@ -76,8 +76,821 @@
                     <a href="#home" class="hover:text-brand-600 transition-colors py-1">Início</a>
                     <a href="#sobre" class="hover:text-brand-600 transition-colors py-1">Sobre</a>
                     <a href="#planos" class="hover:text-brand-600 transition-colors py-1">Planos & Preços</a>
+                    <a href="#destinos" class="hover:text-brand-600 transition-colors py-1">Destinos</a>
+                    <a href="#depoimentos" class="hover:text-brand-600 transition-colors py-1">Depoimentos</a>
+                    <a href="#contato" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md shadow-brand-500/20 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                        Contato
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none" aria-label="Menu Mobile">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#home" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Início</a>
+            <a href="#sobre" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Sobre</a>
+            <a href="#planos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Planos & Preços</a>
+            <a href="#destinos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Destinos</a>
+            <a href="#depoimentos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Depoimentos</a>
+            <a href="#contato" class="mobile-link block py-3 text-center bg-brand-600 text-white rounded-xl font-semibold">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden bg-brand-dark min-h-[90vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80" alt="Viagens e Turismo Betamim Guarulhos" class="w-full h-full object-cover object-center opacity-30">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-8 lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-100 text-sm font-medium backdrop-blur-md">
+                        <i class="fa-solid fa-location-dot text-brand-500"></i> Sua Agência de Confiança em Guarulhos
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight font-serif">
+                        Explore novos horizontes saindo de <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-teal-300">Guarulhos</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                        Seja para viagens rápidas na região, escapadas no litoral ou grandes roteiros nacionais e internacionais. A Betamim proporciona vivências inesquecíveis com conforto, segurança e economia.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+                        <a href="#planos" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-brand-500/30 transition-all hover:scale-105">
+                            <i class="fa-solid fa-compass"></i> Ver Nossos Planos
+                        </a>
+                        <a href="#calculadora" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg backdrop-blur-md transition-all">
+                            <i class="fa-solid fa-calculator text-brand-500"></i> Calcular Desconto de Grupo
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-8 border-t border-slate-800 grid grid-cols-3 gap-4 text-slate-300 text-center sm:text-left">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">100%</span>
+                            <span class="text-xs text-slate-400">Guias Credenciados</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">+5.000</span>
+                            <span class="text-xs text-slate-400">Viajantes Satisfeitos</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">até 20%</span>
+                            <span class="text-xs text-slate-400">Off para Grupos (4+)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Betamim -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80" alt="Equipe Betamim Turismo" class="w-full h-[450px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-brand-700 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs">
+                        <i class="fa-solid fa-quote-left text-3xl text-brand-500 mb-2"></i>
+                        <p class="text-sm font-medium">"Transformamos viagens partindo de Guarulhos em memórias extraordinárias."</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="inline-block px-3.5 py-1 rounded-full bg-brand-50 text-brand-700 font-semibold text-sm">
+                        Sobre a Betamim
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif leading-tight">
+                        Sua agência de turismo de excelência em Guarulhos
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        Nascida em Guarulhos com o propósito de aproximar você das melhores experiências turísticas do Brasil e do mundo, a <strong>Betamim</strong> une excelência em atendimento, logística estratégica próximo ao Aeroporto Internacional e roteiros cuidadosamente desenhados.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Seja para um bate-volta ecológico na Serra da Cantareira, um fim de semana relaxante no litoral paulista ou pacotes completos nacionais e internacionais, oferecemos flexibilidade e suporte total do início ao fim da sua viagem.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-bus"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Embarque Fácil</h4>
+                                <p class="text-xs text-slate-500">Pontos estratégicos no centro de Guarulhos e Aeroporto.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Segurança Total</h4>
+                                <p class="text-xs text-slate-500">Seguro viagem incluso e frotas credenciadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section id="planos" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-brand-100 text-brand-800 font-semibold text-sm">
+                    Planos Exclusivos
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif mt-3">
+                    Escolha a Experiência Perfeita Para Você
+                </h2>
+                <p class="text-slate-600 mt-4 text-lg">
+                    Formatos flexíveis pensados para o seu perfil. Planejou viajar em grupo? Aproveite nosso desconto especial!
+                </p>
+
+                <!-- Destaque do Desconto em Grupo -->
+                <div class="mt-8 bg-gradient-to-r from-amber-500 via-gold-500 to-amber-600 text-white p-4 sm:p-6 rounded-2xl shadow-lg border border-amber-300 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <span class="bg-white text-amber-800 font-black text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wider">Super Desconto de Grupo</span>
+                            <h3 class="text-xl font-bold mt-1">Vai viajar com família ou amigos?</h3>
+                            <p class="text-amber-100 text-sm">Grupos de <strong>4 pessoas ou mais</strong> garantem até <strong>20% DE DESCONTO</strong> automático em qualquer plano!</p>
+                        </div>
+                    </div>
+                    <a href="#calculadora" class="bg-white text-amber-900 hover:bg-amber-50 px-5 py-2.5 rounded-xl font-bold text-sm transition-colors shrink-0 whitespace-nowrap shadow-md">
+                        Simular Orçamento <i class="fa-solid fa-arrow-down ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cards dos Planos -->
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+                <!-- Plano 1: Econômico -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative transition-all duration-300 card-glow">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-brand-600 font-bold text-sm uppercase tracking-wider">Essencial & Acessível</span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-1">Plano Econômico</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-sm mb-6">
+                            Ideal para quem busca máxima eficiência financeiramente, sem abrir mão do conforto e segurança essenciais nos passeios.
+                        </p>
+
+                        <div class="bg-slate-50 p-4 rounded-2xl mb-6 border border-slate-100">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-slate-500 font-semibold text-sm">R$</span>
+                                <span class="text-4xl font-extrabold text-slate-900">250</span>
+                                <span class="text-slate-500 text-sm font-medium">/ por pessoa</span>
+                            </div>
+                            <div class="text-xs text-brand-700 font-semibold mt-1">
+                                <i class="fa-solid fa-tag"></i> R$ 200/pessoa para grupos de 4+ (20% OFF)
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8 text-sm text-slate-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Transporte executivo compartilhado (Van/Ônibus)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Hospedagem padrão confortável (Pousada/Hotel 3★)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Guia de turismo credenciado Cadastur</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Roteiro com passeios essenciais</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Café da manhã incluso</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Embarque no centro de Guarulhos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectPlan('Econômico')" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors shadow-md">
+                        Escolher Plano Econômico
+                    </a>
+                </div>
+
+                <!-- Plano 2: Exclusivo -->
+                <div class="bg-slate-900 text-white rounded-3xl p-8 border-2 border-amber-500/50 shadow-2xl flex flex-col justify-between relative transition-all duration-300 gold-glow">
+                    <div class="absolute -top-4 right-8 bg-gradient-to-r from-amber-500 to-gold-500 text-slate-950 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                        Mais Recomendado VIP
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-amber-400 font-bold text-sm uppercase tracking-wider">Atendimento Premium</span>
+                                <h3 class="text-2xl font-bold text-white mt-1">Plano Exclusivo</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl border border-amber-500/20">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm mb-6">
+                            Uma experiência VIP sob medida com total privacidade, gastronomia inclusa e atendimento personalizado 24 horas.
+                        </p>
+
+                        <div class="bg-slate-800/80 p-4 rounded-2xl mb-6 border border-slate-700">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-slate-400 font-semibold text-sm">R$</span>
+                                <span class="text-4xl font-extrabold text-amber-400">550</span>
+                                <span class="text-slate-400 text-sm font-medium">/ por pessoa</span>
+                            </div>
+                            <div class="text-xs text-amber-300 font-semibold mt-1">
+                                <i class="fa-solid fa-tag"></i> R$ 440/pessoa para grupos de 4+ (20% OFF)
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8 text-sm text-slate-300">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Transporte privativo premium com porta a porta em GRU</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Hospedagem de Luxo (Hotéis 4★/5★ ou Resorts)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Passeios 100% personalizados e sem filas</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Todas as refeições inclusas (Pensão Completa)</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Atendimento Concierge VIP 24/7 dedicado</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Kit de Boas-vindas VIP Betamim</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectPlan('Exclusivo')" class="block text-center w-full bg-gradient-to-r from-amber-500 to-gold-500 hover:from-amber-600 hover:to-gold-600 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                        Reservar Experiência Exclusiva
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculadora" class="py-16 bg-white border-t border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 to-brand-dark rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-brand-500 font-semibold text-xs uppercase tracking-widest">Calculadora de Investimento</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold font-serif mt-1">Simule o Orçamento do Seu Grupo</h3>
+                    <p class="text-slate-400 text-sm mt-2">Escolha o plano e a quantidade de viajantes para visualizar seu desconto exclusivo instantaneamente.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-slate-800/60 p-6 rounded-2xl border border-slate-700/60 backdrop-blur-sm">
+                    <!-- Inputs -->
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">1. Selecione o Plano</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" id="calc-plan-eco" onclick="updateCalculator('Econômico')" class="py-2.5 px-3 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-brand-600 border-brand-500 text-white shadow-md">
+                                    <i class="fa-solid fa-piggy-bank"></i> Econômico
+                                </button>
+                                <button type="button" id="calc-plan-exc" onclick="updateCalculator('Exclusivo')" class="py-2.5 px-3 rounded-xl border border-slate-600 text-slate-300 hover:border-slate-500 text-sm font-semibold transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-crown text-amber-400"></i> Exclusivo
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-xs font-semibold uppercase tracking-wider text-slate-300">2. N° de Pessoas</label>
+                                <span id="people-count-display" class="bg-brand-500/20 text-brand-300 text-xs px-2 py-0.5 rounded-md font-bold">1 Pessoa</span>
+                            </div>
+                            <input type="range" id="calc-people" min="1" max="20" value="1" oninput="updateCalculator()" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+                            <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-medium">
+                                <span>1</span>
+                                <span>4 (Ativa Desconto!)</span>
+                                <span>10</span>
+                                <span>20+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Result -->
+                    <div class="bg-slate-900/90 p-6 rounded-xl border border-slate-700/80 text-center flex flex-col justify-center items-center">
+                        <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Valor Total Estimado</span>
+                        
+                        <div class="my-2">
+                            <span id="calc-total" class="text-4xl font-extrabold text-white">R$ 250</span>
+                        </div>
+
+                        <div id="calc-discount-badge" class="hidden transition-all duration-300 bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold my-1">
+                            <i class="fa-solid fa-bolt mr-1"></i> Desconto de 20% aplicado!
+                        </div>
+
+                        <p id="calc-per-person" class="text-xs text-slate-400 mt-2">
+                            (R$ 250 por pessoa)
+                        </p>
+
+                        <button onclick="applyToForm()" class="mt-4 w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-2.5 rounded-lg text-sm transition-all shadow-md">
+                            Solicitar Reserva Com Este Valor
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos Populares Partindo de Guarulhos -->
+    <section id="destinos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-600 font-semibold text-sm">Roteiros Selecionados</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif mt-1">Destinos em Destaque</h2>
+                </div>
+                <p class="text-slate-600 text-sm max-w-md mt-2 md:mt-0">
+                    Passeios com saídas diretas de Guarulhos com todo o conforto para você e seu grupo.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card Destino 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="Ecoturismo Serra da Cantareira" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full">
+                            Regional
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition-colors">Serra da Cantareira</h3>
+                        <p class="text-slate-500 text-xs mt-1">Ecoturismo, trilhas naturais e ar puro ao lado de Guarulhos.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> Bate e Volta</span>
+                            <span class="text-brand-700 font-bold">Saídas Semanais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Destino 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Litoral Norte SP" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full">
+                            Praias
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition-colors">Litoral Norte (Ubatuba)</h3>
+                        <p class="text-slate-500 text-xs mt-1">Praias paradisíacas e descanso com transporte direto de GRU.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> Fim de Semana</span>
+                            <span class="text-brand-700 font-bold">Mais Procurado</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Destino 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Campos do Jordão" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full">
+                            Serra
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition-colors">Campos do Jordão</h3>
+                        <p class="text-slate-500 text-xs mt-1">Clima europeu, gastronomia requintada e aconchego nas montanhas.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> 3 Dias / 2 Noites</span>
+                            <span class="text-brand-700 font-bold">Clássico de Inverno</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Destino 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&q=80" alt="Destinos Nacionais e Internacionais" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full">
+                            Global
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition-colors">Voos a Partir de GRU</h3>
+                        <p class="text-slate-500 text-xs mt-1">Pacotes aéreos nacionais e internacionais com suporte completo.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> Personalizado</span>
+                            <span class="text-brand-700 font-bold">Sob Demanda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-600 font-semibold text-sm">Histórias Reais</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif mt-1">O Que Dizem Nossos Viajantes</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6">"Fechamos o pacote em grupo para 6 pessoas no Plano Econômico rumo ao Litoral. O desconto de grupo valeu super a pena e a organização foi impecável de Guarulhos até a praia!"</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center">MC</div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900 text-sm">Marcos Correia</h4>
+                            <p class="text-xs text-slate-500">Viajante de Guarulhos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6">"O atendimento Concierge VIP do Plano Exclusivo superou todas as expectativas. Sem filas, hotéis maravilhosos e conforto absoluto para nossa família."</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center">AP</div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900 text-sm">Ana Paula Siqueira</h4>
+                            <p class="text-xs text-slate-500">Empresária</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-sm italic mb-6">"Fácil de embarcar bem pertinho de casa em Guarulhos. Equipe pontual, guia simpático e muita segurança. Já estou programando a próxima viagem!"</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-200 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center">JR</div>
+                        <div>
+                            <h4 class="font-semibold text-slate-900 text-sm">Julio Ribeiro</h4>
+                            <p class="text-xs text-slate-500">Professor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato / Orçamento -->
+    <section id="contato" class="py-20 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-brand-400 font-semibold text-sm">Fale Conosco</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-serif">Pronto para embarcar na sua próxima viagem?</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Preencha o formulário ou entre em contato diretamente pelo WhatsApp. Nossa equipe em Guarulhos está pronta para montar o seu roteiro perfeito.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl border border-brand-500/20">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Central de Atendimento</span>
+                                <span class="font-semibold text-white">(11) 99888-7766</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl border border-brand-500/20">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">E-mail Comercial</span>
+                                <span class="font-semibold text-white">contato@betamimturismo.com.br</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl border border-brand-500/20">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Escritório Central</span>
+                                <span class="font-semibold text-white">Centro, Guarulhos - SP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 shadow-2xl">
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Seu Nome</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="Nome completo">
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">E-mail</label>
+                                <input type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="seu@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">WhatsApp / Telefone</label>
+                                <input type="tel" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="(11) 99999-9999">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Plano Desejado</label>
+                                <select id="form-plan-select" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm">
+                                    <option value="Econômico">Plano Econômico</option>
+                                    <option value="Exclusivo">Plano Exclusivo VIP</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">N° de Viajantes</label>
+                                <input type="number" id="form-people-input" min="1" value="1" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Mensagem ou Observações</label>
+                            <textarea rows="3" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-500 text-sm" placeholder="Conte-nos o destino desejado e datas preferidas..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-brand-500/20 text-sm">
+                            Enviar Solicitação de Reserva
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-brand-600 flex items-center justify-center text-white font-bold text-sm">
+                    B
+                </div>
+                <span class="text-white font-bold tracking-tight text-lg">Betamim Turismo Guarulhos</span>
+            </div>
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Betamim Turismo e Viagens. Todos os direitos reservados.
+            </p>
+            <div class="flex gap-4 text-lg">
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-brand-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interativo -->
+    <script>
+        // Menu Mobile Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('fa-bars');
+            menuIcon.classList.toggle('fa-xmark');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Lógica da Calculadora
+        let currentPlan = 'Econômico';
+        const prices = {
+            'Econômico': 250,
+            'Exclusivo': 550
+        };
+
+        function updateCalculator(planName) {
+            if (planName) {
+                currentPlan = planName;
+                const ecoBtn = document.getElementById('calc-plan-eco');
+                const excBtn = document.getElementById('calc-plan-exc');
+                
+                if (currentPlan === 'Econômico') {
+                    ecoBtn.className = "py-2.5 px-3 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-brand-600 border-brand-500 text-white shadow-md";
+                    excBtn.className = "py-2.5 px-3 rounded-xl border border-slate-600 text-slate-300 hover:border-slate-500 text-sm font-semibold transition-all flex items-center justify-center gap-2";
+                } else {
+                    excBtn.className = "py-2.5 px-3 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-amber-600 border-amber-500 text-slate-950 font-bold shadow-md";
+                    ecoBtn.className = "py-2.5 px-3 rounded-xl border border-slate-600 text-slate-300 hover:border-slate-500 text-sm font-semibold transition-all flex items-center justify-center gap-2";
+                }
+            }
+
+            const peopleCount = parseInt(document.getElementById('calc-people').value);
+            document.getElementById('people-count-display').innerText = peopleCount + (peopleCount === 1 ? ' Pessoa' : ' Pessoas');
+
+            let basePrice = prices[currentPlan];
+            let hasDiscount = peopleCount >= 4;
+            let finalUnitPrice = hasDiscount ? basePrice * 0.8 : basePrice;
+            let total = finalUnitPrice * peopleCount;
+
+            document.getElementById('calc-total').innerText = 'R$ ' + total.toLocaleString('pt-BR');
+            
+            const badge = document.getElementById('calc-discount-badge');
+            if (hasDiscount) {
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+
+            document.getElementById('calc-per-person').innerText = `(R$ ${finalUnitPrice.toFixed(0)} por pessoa${hasDiscount ? ' - 20% OFF aplicado' : ''})`;
+        }
+
+        function selectPlan(planName) {
+            currentPlan = planName;
+            document.getElementById('form-plan-select').value = planName;
+            updateCalculator(planName);
+        }
+
+        function applyToForm() {
+            const peopleCount = document.getElementById('calc-people').value;
+            document.getElementById('form-plan-select').value = currentPlan;
+            document.getElementById('form-people-input').value = peopleCount;
+            
+            // Rola suavemente até o contato
+            document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert('Solicitação enviada com sucesso! Nossa equipe em Guarulhos entrará em contato em breve via WhatsApp.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betamim - Turismo & Viagens em Guarulhos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter + Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                            dark: '#0a192f',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-overlay {
+            background: linear-gradient(180deg, rgba(10, 25, 47, 0.7) 0%, rgba(10, 25, 47, 0.85) 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 20px 25px -5px rgba(20, 184, 166, 0.15), 0 10px 10px -5px rgba(20, 184, 166, 0.04);
+        }
+        .gold-glow:hover {
+            box-shadow: 0 20px 25px -5px rgba(245, 158, 11, 0.2), 0 10px 10px -5px rgba(245, 158, 11, 0.08);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-2 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-500 flex items-center justify-center text-white text-xl font-bold shadow-md transform group-hover:rotate-6 transition-transform">
+                        <span class="font-bold">B</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold tracking-tight text-slate-900 group-hover:text-brand-600 transition-colors">Betamim</span>
+                        <span class="text-[10px] tracking-widest uppercase text-brand-600 font-semibold -mt-1">Turismo Guarulhos</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                    <a href="#home" class="hover:text-brand-600 transition-colors py-1">Início</a>
+                    <a href="#sobre" class="hover:text-brand-600 transition-colors py-1">Sobre</a>
+                    <a href="#planos" class="hover:text-brand-600 transition-colors py-1">Planos & Preços</a>
                     <a href="#destinos" class="hover:text-brand-600 transition-colors py-1">Destinos Em Guarulhos</a>
                     <a href="#depoimentos" class="hover:text-brand-600 transition-colors py-1Aqui está o código HTML atualizado com as alterações solicitadas:
 
 1. **Número de contato:** Atualizado para **(11) 95368-0459** (com link direto para o WhatsApp).
-2. **Destinos:** Todos 100% **dentro de Guarulhos** (Parque Bos
+2. **Destinos:** Todos 100% **dentro de Guarulhos** (Parque Bosque Maia, Parque Estadual da Cantareira - Núcleo Cabuçu, Lago dos Patos e Zoobotânico de Guarulhos).
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betamim - Turismo & Viagens em Guarulhos</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <!-- Google Fonts (Inter + Playfair Display) -->
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap)" rel="stylesheet">
+    <!-- FontAwesome CDN for Icons -->
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            500: '#14b8a6', // Teal
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                            dark: '#0a192f',
+                        },
+                        gold: {
+                            400: '#fbbf2
