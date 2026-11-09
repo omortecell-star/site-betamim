@@ -76,43 +76,378 @@
                     <a href="#home" class="hover:text-brand-600 transition-colors py-1">Início</a>
                     <a href="#sobre" class="hover:text-brand-600 transition-colors py-1">Sobre</a>
                     <a href="#planos" class="hover:text-brand-600 transition-colors py-1">Planos & Preços</a>
-                    <a href="#destinos" class="hover:text-brand-600 transition-colors py-1">Destinos Em Guarulhos</a>
-                    <a href="#depoimentos" class="hover:text-brand-600 transition-colors py-1Aqui está o código HTML atualizado com as alterações solicitadas:
+                    <a href="#destinos" class="hover:text-brand-600 transition-colors py-1">Destinos Em GRU</a>
+                    <a href="#depoimentos" class="hover:text-brand-600 transition-colors py-1">Depoimentos</a>
+                    <a href="#contato" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-xl font-semibold shadow-md shadow-brand-500/20 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                        Contato
+                    </a>
+                </nav>
 
-1. **Número de contato:** Atualizado para **(11) 95368-0459** (com link direto para o WhatsApp).
-2. **Destinos:** Todos 100% **dentro de Guarulhos** (Parque Bosque Maia, Parque Estadual da Cantareira - Núcleo Cabuçu, Lago dos Patos e Zoobotânico de Guarulhos).
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none" aria-label="Menu Mobile">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
 
-```html
-<!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betamim - Turismo & Viagens em Guarulhos</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    <!-- Google Fonts (Inter + Playfair Display) -->
-    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
-    <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap)" rel="stylesheet">
-    <!-- FontAwesome CDN for Icons -->
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50: '#f0fdfa',
-                            100: '#ccfbf1',
-                            500: '#14b8a6', // Teal
-                            600: '#0d9488',
-                            700: '#0f766e',
-                            800: '#115e59',
-                            900: '#134e4a',
-                            dark: '#0a192f',
-                        },
-                        gold: {
-                            400: '#fbbf2
-                            
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#home" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Início</a>
+            <a href="#sobre" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Sobre</a>
+            <a href="#planos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Planos & Preços</a>
+            <a href="#destinos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Destinos Em GRU</a>
+            <a href="#depoimentos" class="mobile-link block py-2 text-slate-700 hover:text-brand-600 font-medium">Depoimentos</a>
+            <a href="#contato" class="mobile-link block py-3 text-center bg-brand-600 text-white rounded-xl font-semibold">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden bg-brand-dark min-h-[90vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1920&q=80" alt="Viagens e Turismo Betamim Guarulhos" class="w-full h-full object-cover object-center opacity-30">
+            <div class="absolute inset-0 gradient-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-8 lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-100 text-sm font-medium backdrop-blur-md">
+                        <i class="fa-solid fa-location-dot text-brand-500"></i> Sua Agência de Turismo Urbano em Guarulhos
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight font-serif">
+                        Descubra o melhor do turismo em <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-teal-300">Guarulhos</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-300 font-light max-w-2xl leading-relaxed">
+                        Conheça os principais parques, reservas ecológicas e atrações culturais da cidade com transporte guiado, segurança e roteiros sob medida.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
+                        <a href="https://wa.me/5511953680459" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition-all hover:scale-105">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> Falar no WhatsApp
+                        </a>
+                        <a href="#destinos" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-semibold text-lg backdrop-blur-md transition-all">
+                            <i class="fa-solid fa-map-location-dot text-brand-500"></i> Ver Roteiros em GRU
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-8 border-t border-slate-800 grid grid-cols-3 gap-4 text-slate-300 text-center sm:text-left">
+                        <div>
+                            <span class="block text-2xl font-bold text-white">100%</span>
+                            <span class="text-xs text-slate-400">Guias Locais</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">+5.000</span>
+                            <span class="text-xs text-slate-400">Visitantes Atendidos</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-white">até 20%</span>
+                            <span class="text-xs text-slate-400">Off para Grupos (4+)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Betamim -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80" alt="Equipe Betamim Turismo" class="w-full h-[450px] object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-brand-700 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs">
+                        <i class="fa-solid fa-quote-left text-3xl text-brand-500 mb-2"></i>
+                        <p class="text-sm font-medium">"Redescubra os encantos naturais e culturais da nossa querida Guarulhos."</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="inline-block px-3.5 py-1 rounded-full bg-brand-50 text-brand-700 font-semibold text-sm">
+                        Sobre a Betamim
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif leading-tight">
+                        Especialistas em passeios e experiências turísticas em Guarulhos
+                    </h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        A <strong>Betamim Turismo</strong> é especializada em apresentar o melhor de Guarulhos para moradores e visitantes. Levamos grupos a parques emblemáticos, áreas de preservação da Mata Atlântica e circuitos culturais urbanos.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Oferecemos logística de transporte local, guias especializados na história do município e roteiros adaptados para famílias, escolas e grupos corporativos.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-bus"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Passeios Urbanos</h4>
+                                <p class="text-xs text-slate-500">Vans e transporte confortável em todos os bairros de GRU.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-900">Atendimento Direto</h4>
+                                <p class="text-xs text-slate-500">Agendamento rápido via WhatsApp (11) 95368-0459.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section id="planos" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3.5 py-1 rounded-full bg-brand-100 text-brand-800 font-semibold text-sm">
+                    Planos de Tour Urbano
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif mt-3">
+                    Escolha a Experiência em Guarulhos
+                </h2>
+                <p class="text-slate-600 mt-4 text-lg">
+                    Formatos flexíveis para passeios individuais ou em grupo pela cidade.
+                </p>
+
+                <!-- Destaque do Desconto em Grupo -->
+                <div class="mt-8 bg-gradient-to-r from-amber-500 via-gold-500 to-amber-600 text-white p-4 sm:p-6 rounded-2xl shadow-lg border border-amber-300 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div>
+                            <span class="bg-white text-amber-800 font-black text-xs px-2.5 py-0.5 rounded-full uppercase tracking-wider">Desconto de Grupo em GRU</span>
+                            <h3 class="text-xl font-bold mt-1">Vai passear com a família ou amigos?</h3>
+                            <p class="text-amber-100 text-sm">Grupos de <strong>4 pessoas ou mais</strong> garantem <strong>20% DE DESCONTO</strong> automático!</p>
+                        </div>
+                    </div>
+                    <a href="#calculadora" class="bg-white text-amber-900 hover:bg-amber-50 px-5 py-2.5 rounded-xl font-bold text-sm transition-colors shrink-0 whitespace-nowrap shadow-md">
+                        Simular Orçamento <i class="fa-solid fa-arrow-down ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Cards dos Planos -->
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+                <!-- Plano 1: Econômico -->
+                <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-lg flex flex-col justify-between relative transition-all duration-300 card-glow">
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-brand-600 font-bold text-sm uppercase tracking-wider">Essencial GRU</span>
+                                <h3 class="text-2xl font-bold text-slate-900 mt-1">Plano Econômico</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-piggy-bank"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-600 text-sm mb-6">
+                            Ideal para passeios de meio período ou um dia inteiro visitando os principais parques de Guarulhos.
+                        </p>
+
+                        <div class="bg-slate-50 p-4 rounded-2xl mb-6 border border-slate-100">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-slate-500 font-semibold text-sm">R$</span>
+                                <span class="text-4xl font-extrabold text-slate-900">250</span>
+                                <span class="text-slate-500 text-sm font-medium">/ por pessoa</span>
+                            </div>
+                            <div class="text-xs text-brand-700 font-semibold mt-1">
+                                <i class="fa-solid fa-tag"></i> R$ 200/pessoa para grupos de 4+ (20% OFF)
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8 text-sm text-slate-600">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Transporte executivo saindo do seu bairro em GRU</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Roteiro por 2 pontos turísticos de Guarulhos</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Guia local acompanhante</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brand-500 text-base"></i>
+                                <span>Água e kit lanche de boas-vindas</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectPlan('Econômico')" class="block text-center w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl transition-colors shadow-md">
+                        Escolher Plano Econômico
+                    </a>
+                </div>
+
+                <!-- Plano 2: Exclusivo -->
+                <div class="bg-slate-900 text-white rounded-3xl p-8 border-2 border-amber-500/50 shadow-2xl flex flex-col justify-between relative transition-all duration-300 gold-glow">
+                    <div class="absolute -top-4 right-8 bg-gradient-to-r from-amber-500 to-gold-500 text-slate-950 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                        Tour VIP Guarulhos
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-amber-400 font-bold text-sm uppercase tracking-wider">Atendimento Premium</span>
+                                <h3 class="text-2xl font-bold text-white mt-1">Plano Exclusivo</h3>
+                            </div>
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl border border-amber-500/20">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 text-sm mb-6">
+                            Tour privativo e personalizado com parada gastronômica nos melhores restaurantes de Guarulhos.
+                        </p>
+
+                        <div class="bg-slate-800/80 p-4 rounded-2xl mb-6 border border-slate-700">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-slate-400 font-semibold text-sm">R$</span>
+                                <span class="text-4xl font-extrabold text-amber-400">550</span>
+                                <span class="text-slate-400 text-sm font-medium">/ por pessoa</span>
+                            </div>
+                            <div class="text-xs text-amber-300 font-semibold mt-1">
+                                <i class="fa-solid fa-tag"></i> R$ 440/pessoa para grupos de 4+ (20% OFF)
+                            </div>
+                        </div>
+
+                        <ul class="space-y-4 mb-8 text-sm text-slate-300">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Transporte privativo porta a porta em Guarulhos</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Circuito completo por 4 atrações de Guarulhos</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Almoço completo incluso em restaurante parceiro</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-amber-400 text-base"></i>
+                                <span>Fotógrafo dedicado para o seu grupo</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="#contato" onclick="selectPlan('Exclusivo')" class="block text-center w-full bg-gradient-to-r from-amber-500 to-gold-500 hover:from-amber-600 hover:to-gold-600 text-slate-950 font-extrabold py-3.5 px-6 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                        Reservar Experiência Exclusiva
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculadora" class="py-16 bg-white border-t border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-slate-900 to-brand-dark rounded-3xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-brand-500/10 rounded-full blur-3xl"></div>
+                
+                <div class="text-center max-w-xl mx-auto mb-8">
+                    <span class="text-brand-500 font-semibold text-xs uppercase tracking-widest">Calculadora de Investimento</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold font-serif mt-1">Simule o Orçamento do Seu Grupo</h3>
+                    <p class="text-slate-400 text-sm mt-2">Escolha o plano e a quantidade de viajantes para o tour em Guarulhos.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-slate-800/60 p-6 rounded-2xl border border-slate-700/60 backdrop-blur-sm">
+                    <!-- Inputs -->
+                    <div class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">1. Selecione o Plano</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" id="calc-plan-eco" onclick="updateCalculator('Econômico')" class="py-2.5 px-3 rounded-xl border text-sm font-semibold transition-all flex items-center justify-center gap-2 bg-brand-600 border-brand-500 text-white shadow-md">
+                                    <i class="fa-solid fa-piggy-bank"></i> Econômico
+                                </button>
+                                <button type="button" id="calc-plan-exc" onclick="updateCalculator('Exclusivo')" class="py-2.5 px-3 rounded-xl border border-slate-600 text-slate-300 hover:border-slate-500 text-sm font-semibold transition-all flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-crown text-amber-400"></i> Exclusivo
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-xs font-semibold uppercase tracking-wider text-slate-300">2. N° de Pessoas</label>
+                                <span id="people-count-display" class="bg-brand-500/20 text-brand-300 text-xs px-2 py-0.5 rounded-md font-bold">1 Pessoa</span>
+                            </div>
+                            <input type="range" id="calc-people" min="1" max="20" value="1" oninput="updateCalculator()" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-brand-500">
+                            <div class="flex justify-between text-[10px] text-slate-400 mt-1 font-medium">
+                                <span>1</span>
+                                <span>4 (Ativa Desconto!)</span>
+                                <span>10</span>
+                                <span>20+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Result -->
+                    <div class="bg-slate-900/90 p-6 rounded-xl border border-slate-700/80 text-center flex flex-col justify-center items-center">
+                        <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Valor Total Estimado</span>
+                        
+                        <div class="my-2">
+                            <span id="calc-total" class="text-4xl font-extrabold text-white">R$ 250</span>
+                        </div>
+
+                        <div id="calc-discount-badge" class="hidden transition-all duration-300 bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3 py-1 rounded-full font-bold my-1">
+                            <i class="fa-solid fa-bolt mr-1"></i> Desconto de 20% aplicado!
+                        </div>
+
+                        <p id="calc-per-person" class="text-xs text-slate-400 mt-2">
+                            (R$ 250 por pessoa)
+                        </p>
+
+                        <button onclick="applyToForm()" class="mt-4 w-full bg-brand-500 hover:bg-brand-600 text-white font-bold py-2.5 rounded-lg text-sm transition-all shadow-md">
+                            Solicitar Reserva Com Este Valor
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinos Populares Dentro de Guarulhos -->
+    <section id="destinos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-600 font-semibold text-sm">Turismo Local em Guarulhos</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 font-serif mt-1">Destinos em Destaque na Cidade</h2>
+                </div>
+                <p class="text-slate-600 text-sm max-w-md mt-2 md:mt-0">
+                    Conheça os principais pontos turísticos ecológicos e urbanos localizados dentro do município de Guarulhos.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card Destino 1: Bosque Maia -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?auto=format&fit=crop&w=600&q=80" alt="Bosque Maia Guarulhos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 bg-white/90 backdrop-blur-md text-slate-900 text-xs font-bold px-2.5 py-1 rounded-full">
+                            Centro
+                        </span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition-colors">Bosque Maia</h3>
+                        <p class="text-slate-500 text-xs mt-1">O maior parque urbano de Guarulhos com ampla área verde, pistas e orquidário.</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-medium text-slate-600">
+                            <span><i class="fa-regular fa-clock text-brand-500 mr-1"></i> 2 a 4 Horas</span>
+                            <span class="text-brand-700 font-bold">Saídas Diárias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Destino 2: Lago dos Patos -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200 group hover:shadow-xl transition-all duration-300">
